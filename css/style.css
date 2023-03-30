@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@300&family=Open+Sans&family=Paytone+One&display=swap');
+
+:root {
+    --background: rgb(236, 226, 255);
+    --middleground: rgb(211, 187, 255);
+    --foreground: rgb(112, 38, 251);
+    --title-color: rgb(249, 245, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: var(--background);
+}
+
+.header {
+    background-color: var(--foreground);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px;
+    max-height: 65px;
+}
+
+.title {
+    color: var(--title-color);
+    font-family: 'Paytone One', sans-serif;
+}
+
+.social {
+    display: flex;
+    gap: 0px 5px;
+}
+
+.social > img {
+    width: 40px;
+    transition: all 300ms ease;
+}
+
+.social > img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.posts-text {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 10pt;
+    margin: 20px 0px 10px 0px;
+}
+
+.posts {
+    width: 100%;
+    height: 100%;
+}
+
+.post {
+    max-width: 400px;
+    background-color: var(--middleground);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+    transition: all 300ms ease-in-out;
+}
+
+.post:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.post > img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.post-content {
+    padding: 10px;
+}
+
+.posts-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px 0px;
+    justify-content: space-around;
+    color: black;
+}
+
+.post-title {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.desc {
+    font-family: 'Nunito', sans-serif;
+}
+
+.date {
+    margin-top: 10px;
+    font-family: monospace;
+    color: rgb(0 0 0 / 80%);
+}
